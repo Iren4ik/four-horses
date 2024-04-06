@@ -1,0 +1,149 @@
+.section-main {
+  position: relative;
+  display: flex;
+}
+
+.section-main::after,
+.section-main__overlay {
+  position: absolute;
+  width: 100%;
+  top: -56px;
+  left: 0;
+}
+
+.section-main::after,
+.section-main__overlay,
+.section-main__pictures {
+  height: 730px;
+}
+
+
+.section-main__overlay {
+  background-color: var(--bg-color);
+  opacity: 1;
+  z-index: 0;
+}
+
+/* контейнер с картинками */
+.section-main__pictures {
+  width: 1620px;
+  margin: auto;
+  position: relative;
+  /* background-color: rgb(158, 158, 202); */
+  /* opacity: 0.5; */
+}
+
+.section-main__ellipse-text,
+.section-main__ellipse,
+.section-main__king,
+.section-main__queen,
+.section-main__city,
+.section-main__city-line,
+.section-main__horse,
+.section-main__pawn {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section-main__ellipse-text {
+  background-image: url('../../images/ellipse-text.png');
+  top: -22px;
+  right: 105px;
+  width: 770px;
+  height: 770px;
+  opacity: 1;
+  z-index: 1;
+}
+
+.section-main__ellipse {
+  background-color: #FBCE51;
+  border-radius: 50%;
+  top: -65px;
+  right: 160px;
+  width: 660px;
+  height: 660px;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.section-main__king,
+.section-main__queen,
+.section-main__city,
+.section-main__city-line,
+.section-main__horse,
+.section-main__pawn {
+  opacity: 1;
+}
+
+.section-main__king,
+.section-main__queen {
+  z-index: 3;
+}
+
+.section-main__king {
+  background-image: url('../../images/chess-king.png');
+  top: 245px;
+  right: 630px;
+  width: 130px;
+  height: 300px;
+}
+
+.section-main__queen {
+  background-image: url('../../images/chess-queen.png');
+  top: 140px;
+  right: 280px;
+  width: 150px;
+  height: 300px;
+}
+
+.section-main__city {
+  background-image: url('../../images/city.png');
+  top: 247px;
+  left: 20px;
+  width: 1615px;
+  height: 452px;
+  z-index: 4;
+}
+
+.section-main::after {
+  content: "";
+  background-image: url('../../images/overlay.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  opacity: 0.2;
+}
+
+.section-main__city-line {
+  background-image: url('../../images/city-line.png');
+  top: 235px;
+  left: 5px;
+  width: 1610px;
+  height: 500px;
+  z-index: 6;
+}
+
+.section-main__horse,
+.section-main__pawn {
+  z-index: 7;
+}
+
+.section-main__horse {
+  background-image: url('../../images/chess-horse.png');
+  top: 453px;
+  right: 455px;
+  width: 200px;
+  height: 253px;
+}
+
+.section-main__pawn {
+  background-image: url('../../images/chess-pawn.png');
+  right: 162px;
+  top: 535px;
+  width: 90px;
+  height: 122px;
+}
+
+
+

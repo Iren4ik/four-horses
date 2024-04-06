@@ -1,0 +1,11 @@
+.header {
+  padding-top: 25px;
+  background-color: blueviolet;
+  z-index: 15;
+}
+
+.header__content {
+  max-width: 1222px;;
+  width: 90%;
+  margin: auto;
+}
