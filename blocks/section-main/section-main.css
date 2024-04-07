@@ -12,8 +12,7 @@
 }
 
 .section-main::after,
-.section-main__overlay,
-.section-main__pictures {
+.section-main__overlay {
   height: 730px;
 }
 
@@ -27,10 +26,13 @@
 /* контейнер с картинками */
 .section-main__pictures {
   width: 1620px;
+  height: 673px;
   margin: auto;
   position: relative;
   /* background-color: rgb(158, 158, 202); */
+  overflow: hidden;
   /* opacity: 0.5; */
+  overflow: hidden;
 }
 
 .section-main__ellipse-text,
@@ -99,7 +101,7 @@
 
 .section-main__city {
   background-image: url('../../images/city.png');
-  top: 247px;
+  top: 245px;
   left: 20px;
   width: 1615px;
   height: 452px;
@@ -118,8 +120,8 @@
 .section-main__city-line {
   background-image: url('../../images/city-line.png');
   top: 235px;
-  left: 5px;
-  width: 1610px;
+  left: 15px;
+  width: 1600px;
   height: 500px;
   z-index: 6;
 }
@@ -131,7 +133,7 @@
 
 .section-main__horse {
   background-image: url('../../images/chess-horse.png');
-  top: 453px;
+  top: 454px;
   right: 455px;
   width: 200px;
   height: 253px;
@@ -145,5 +147,37 @@
   height: 122px;
 }
 
+@media (max-width: 1620px) {
+  .section-main__city {
+    left: calc((1590px - 100%)/(-2));
+  }
 
+  .section-main__city-line {
+    left: calc((1600px - 100%)/(-2));
+  }
+
+  .section-main__king {
+    right: calc((100% - 350px)/(2));
+  }
+
+  .section-main__queen {
+    right: calc((100% - 1050px)/(2));
+  }
+
+  .section-main__horse {
+    right: calc((100% - 700px)/(2));
+  }
+
+  .section-main__pawn {
+    right: calc((100% - 1290px)/(2));
+  }
+
+  .section-main__ellipse-text {
+    right: calc((100% - 1410px)/(2));
+  }
+
+  .section-main__ellipse {
+    right: calc((100% - 1300px)/(2));
+  }
+}
 
